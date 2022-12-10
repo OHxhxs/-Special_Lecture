@@ -1,0 +1,11 @@
+FROM tiangolo/uvicorn-gunicorn:python3.9
+
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+COPY ./models /models
+COPY ./app /app
+
+# docker build -f Dockerfile.cpu -t myserver:0.0.1 .
+# docker images
+# docker run -it --rm -p 8000:80 myserver:0.0.1 

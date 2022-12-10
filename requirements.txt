@@ -1,0 +1,6 @@
+onnxruntime-gpu
+opencv-python-headless
+python-multipart
+fastapi
+uvicorn[standard]==0.15.0
+gunicorn==20.1.0
