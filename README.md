@@ -3,4 +3,4 @@
 fastapi,
 Docker cpu, gpu별,
 Gunicorn,
-onnx 사용
+onnx-runtime 사용
